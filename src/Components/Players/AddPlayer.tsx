@@ -12,11 +12,11 @@ export const AddPlayer = () => {
     });
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value, type } = e.target;
+        const { name, value } = e.target;
 
         setValues(prevValues => ({
             ...prevValues, 
-            [name]: type === 'number' ? Number(value) : value
+            [name]: value
         }))
     }
 

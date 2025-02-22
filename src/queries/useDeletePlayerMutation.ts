@@ -9,7 +9,7 @@ export const useDeletePlayerMutation = (playerId: string) => {
     const { mutate, isPending } = useMutation({
         mutationKey: ['players', 'delete', playerId],
         mutationFn: async() => {
-            return apiDelete<PlayerEntity>(`player/${playerId}`)
+            return apiDelete<PlayerEntity>(`players/${playerId}`)
         },
         onSuccess: () => {
             queryClient.invalidateQueries({
