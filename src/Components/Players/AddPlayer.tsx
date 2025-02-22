@@ -1,28 +1,29 @@
-import { useState } from "react"
+import { ChangeEvent, FormEvent, useState } from "react"
+import { useCreatePlayerMutation } from "../../queries/useCreatePlayerMutation";
+import { PlayerForm} from "./PlayerForm";
 
 export const AddPlayer = () => {
-    const {mutate, isPending} = useCreatePlayerMutation();
+    const { mutate, isPending } = useCreatePlayerMutation();
     const [values, setValues] = useState({
         id: '',
         name: '',
         surname: '',
-        teamId: 0
+        teamId: ''
     });
 
-    const handleChange = (e. ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value, type } = e.target;
 
         setValues(prevValues => ({
-            ...prevValues,
+            ...prevValues, 
             [name]: type === 'number' ? Number(value) : value
         }))
     }
 
-    const  handleSubmit = (e: FormEvent) => {
-        e.preventDefauld();
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
 
         mutate({
-            id: values.id,
             name: values.name,
             surname: values.surname,
             teamId: values.teamId,
@@ -32,7 +33,7 @@ export const AddPlayer = () => {
             id: '',
             name: '',
             surname: '',
-            teamId: 0
+            teamId: ''
         })
     }
 

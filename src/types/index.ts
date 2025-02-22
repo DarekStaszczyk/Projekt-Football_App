@@ -1,8 +1,8 @@
 export type PlayerEntity = {
-    id: number;
+    id: string;
     name: string;
     surname: string;
-    teamId: number;
+    teamId: string;
 }
 
 export type PlayerDto = Omit<PlayerEntity, 'id'>

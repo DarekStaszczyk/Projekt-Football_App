@@ -1,57 +1,57 @@
 {
     "players": [
         {
-            "id": 1,
+            "id": "1",
             "name": "Robert",
             "surname": "Lewandowski",
-            "teamId": 1
+            "teamId": "1"
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "Wojciech",
             "surname": "Szczęsny",
-            "teamId": 1
+            "teamId": "1"
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Jadon",
             "surname": "Sancho",
-            "teamId": 2
+            "teamId": "2"
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "Marco",
             "surname": "Reus",
-            "teamId": 2
+            "teamId": "2"
         },
         {
-            "id": 5,
+            "id": "5",
             "name": "Sinji",
             "surname": "Kagawa",
-            "teamId": 2
+            "teamId": "2"
         },
         {
-            "id": 6,
+            "id": "6",
             "name": "Zinedine",
             "surname": "Zidane",
-            "teamId": 0
+            "teamId": "0"
         }
     ],
     "teams": [
         {
-            "id": 1,
+            "id": "1",
             "clubName": "FC Barcelona",
             "year": 1985,
             "location": "Barcelona"
         },
         {
-            "id": 2,
+            "id": "2",
             "clubName": "Borussia Dortmund",
             "year": 1909,
             "location": "Dortmund"
         },
         {
-            "id": 10,
+            "id": "10",
             "clubName": "All Star",
             "year": 2000,
             "location": "London"
@@ -59,24 +59,24 @@
     ],
     "games": [
         {
-            "id": 1,
+            "id": "1",
             "date": "2024-02-07",
             "title": "Liga Mistrzów",
             "gameLocation": "Signal Iduna Park",
             "duration": "90 min",
             "score": "2:1",
-            "Team1Id": 2,
-            "Team2Id": 1
+            "Team1Id": "2",
+            "Team2Id": "1"
         },
         {
-            "id": 2,
+            "id": "2",
             "date": "2024-07-19",
             "title": "Mecz towarzyski",
             "gameLocation": "Santiago Bernabeu",
             "duration": "90 min",
             "score": "3:3",
-            "Team1Id": 1,
-            "Team2Id": 10
+            "Team1Id": "1",
+            "Team2Id": "10"
         }
     ]
 }
