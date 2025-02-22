@@ -1,5 +1,5 @@
 export type PlayerEntity = {
-    id: string;
+    id: number;
     name: string;
     surname: string;
     teamId: number;
